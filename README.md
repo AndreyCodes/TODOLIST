@@ -1,4 +1,5 @@
 # TODOLIST
+#FEATURES - COLOR TEXT
 Build:
   1. Clone rep
   2. download script https://github.com/AndreyCodes/Simple-cpp-build
