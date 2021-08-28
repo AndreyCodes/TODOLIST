@@ -5,7 +5,14 @@ void RecordList::loadFromFile(std::ifstream &stream)
     std::size_t S; //количество записей
     std::string size;
     std::getline(stream, size);
-    S = std::stoull(size);
+    if(size.empty())
+    {
+        S = 0;
+    }
+    else
+    {
+        S = std::stoull(size);
+    }
 
     std::string currName, currText;
     std::string sig;

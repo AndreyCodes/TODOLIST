@@ -10,7 +10,8 @@ void ConsoleCommands::show()
     std::cout << '\n';
     std::cout << "Enter a name of record or enter all\n";
     std::string recName;
-    std::cin >> recName;
+    std::cin.ignore();
+    std::getline(std::cin, recName);
 
     if (recName == std::string("all"))
     {
@@ -52,7 +53,8 @@ void ConsoleCommands::remove()
 {
     std::cout << "enter a name of record to remove it\n";
     std::string recName;
-    std::cin >> recName;
+    std::cin.ignore();
+    std::getline(std::cin, recName);
     if (auto it = records_list.find(recName); it != records_list.end())
     {
         records_list.erase(it);
