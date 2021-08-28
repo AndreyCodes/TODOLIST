@@ -5,6 +5,7 @@ Build:
   3. move this script to folder
   4. run script
   5. wait... Enter a name of exe file.
+--------------------------------------------------------------------
 Start:
   1. Run exe
   2. enter "help" to see commands
